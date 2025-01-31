@@ -1,14 +1,14 @@
+import numpy as np
+import pandas as pd
 from dash import Dash, html, dcc,Input, Output, callback
 from dash.dependencies import Input, Output
 import plotly.express as px
-import pandas as pd
 import dash_bootstrap_components as dbc
 import locale
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.stattools import adfuller
 from prophet import Prophet
-import numpy as np
 import pulp
 
 
