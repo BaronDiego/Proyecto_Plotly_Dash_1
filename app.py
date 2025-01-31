@@ -4,7 +4,6 @@ from dash import Dash, html, dcc,Input, Output, callback
 from dash.dependencies import Input, Output
 import plotly.express as px
 import dash_bootstrap_components as dbc
-import locale
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.stattools import adfuller
@@ -12,7 +11,6 @@ from prophet import Prophet
 import pulp
 
 
-locale.setlocale(locale.LC_ALL,'es_ES.UTF-8')
 
 # Inicializar la aplicación Dash
 app = Dash(__name__, external_stylesheets=[dbc.themes.CERULEAN])
