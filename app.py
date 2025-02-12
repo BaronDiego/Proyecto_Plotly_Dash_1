@@ -14,7 +14,7 @@ import pulp
 
 # Inicializar la aplicación Dash
 app = Dash(__name__, external_stylesheets=[dbc.themes.CERULEAN])
-server = app.server
+
 app.title = 'Optimización del Uso de Energía Renovable'
 df = pd.read_csv('datos.csv')
 
@@ -304,6 +304,8 @@ app.layout = html.Div(
         contenido_seccion_4
 
 ])
+
+server = app.server
 
 # Ejecutar la aplicación
 if __name__ == "__main__":
